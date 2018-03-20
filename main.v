@@ -6,7 +6,7 @@ module main(clk, t0, t1, t2, t3, t4, t5, t6, t7, s0, s1, s2, s3, s4, s5, s6, s7,
    wire [31:0] IMout;
    wire [6:0]  PCout, PC4, PCBMUXout, PCJMUXout, Baddr, Jaddr, PC4out;
    // ID Stage
-   wire [31:0] I, ID_extended, RegWD, RegWA, Regr1, Regr2, Cmpina, Cmpinb;
+   wire [31:0] I, ID_extended, Regr1, Regr2, Cmpina, Cmpinb;
    wire [27:0] ID_shifted;
    wire [15:0] ID_constant;
    wire [7:0]  Controlout, Controlres;
@@ -48,9 +48,9 @@ module main(clk, t0, t1, t2, t3, t4, t5, t6, t7, s0, s1, s2, s3, s4, s5, s6, s7,
    shifter26 Shifter26(I[25:0], ID_shifted);
    assign Jaddr = {I[31:28],ID_shifted};
    signEx signEX(ID_constant,ID_extended);
-   assign Baddr = ID_extended << 2 + PC4out;
-   regFile RF(Regr1, Regr2, MEM_WB_res, MEM_WB_regres, ID_rs, ID_rt, MEM_WB_RegWrite, clk, t0, t1, t2, t3, t4, t5, t6, t7, s0, s1, s2, s3, s4, s5, s6, s7);
-   IDForward IDF(EX_MEM_regres, MEM_WB_regres, EX_regres, EX_MEM_MEMRead, MEM_WB_MEMRead, ID_EX_MEMRead,EX_MEM_RegWrite, MEM_WB_RegWrite, ID_rs, ID_rt, r1ctrl, r2ctrl);
+   assign Baddr = (ID_extended << 2)+ PC4out;
+   regFile RF(Regr1, Regr2, MEM_WB_res, MEM_WB_regres, ID_rs, ID_rt, MEM_WB_RegWrite, t0, t1, t2, t3, t4, t5, t6, t7, s0, s1, s2, s3, s4, s5, s6, s7, clk);
+   IDForward IDF(EX_MEM_regres, MEM_WB_regres, EX_MEM_MEMRead, MEM_WB_MEMRead,EX_MEM_RegWrite, MEM_WB_RegWrite, ID_rs, ID_rt, r1ctrl, r2ctrl);
    MUX_4_1 CmpinMUXa(Regr1, MEM_WB_MEMres, EX_MEM_ALUres, Regr1, r1ctrl, Cmpina);
    MUX_4_1 CmpinMUXb(Regr2, MEM_WB_MEMres, EX_MEM_ALUres, Regr2, r2ctrl, Cmpinb);
    assign Cmpres = (Cmpina == Cmpinb);
@@ -83,7 +83,7 @@ module main(clk, t0, t1, t2, t3, t4, t5, t6, t7, s0, s1, s2, s3, s4, s5, s6, s7,
    assign EX_MEM_MEMWrite = EX_MEM_MEMctr[0];
    assign EX_MEM_RegWrite = EX_MEM_WBctr[0];
 
-   DMEM DM(DMres, EX_MEM_ALUres[6:0], EX_MEM_ALUres[6:0], EX_MEM_MEMWrite, EX_MEM_MEMRead, EX_MEM_r2, mem1, mem2);
+   DMEM DM(DMres, EX_MEM_ALUres[6:0], EX_MEM_ALUres[6:0], EX_MEM_MEMWrite, EX_MEM_MEMRead, EX_MEM_r2, mem1, mem2, clk);
 
    // WB stage
    MEM_WB_Reg MEM_WB_REG(EX_MEM_rs, EX_MEM_rt, {EX_MEM_MEMRead, EX_MEM_WBctr}, MEM_WB_WBctr, MEM_WB_rs, MEM_WB_rt, EX_MEM_regres, MEM_WB_regres, EX_MEM_ALUres, MEM_WB_ALUres, DMres, MEM_WB_MEMres, clk);

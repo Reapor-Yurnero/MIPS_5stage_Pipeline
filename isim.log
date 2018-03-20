@@ -1,0 +1,73 @@
+Command line:
+   ./displaytest_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  55577
+
+Thu Nov 23 23:10:24 2017
+
+WARNING:Simulator:694 - "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/main.v"
+   Line 34.  Module PCReg does not have a `timescale directive but previous
+   modules do.
+Total Line Count : 406
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 236.65 Meg
+
+ Total Signals          : 348
+ Total Nets             : 1539
+ Total Signal Drivers   : 120
+ Total Blocks           : 33
+ Total Primitive Blocks : 30
+ Total Processes        : 162
+ Total Traceable Variables  : 102
+ Total Scalar Nets and Variables : 5913
+ntrace select -o on -n /displaytest/UUT/clkusr 
+ntrace select -o on -n /displaytest/UUT/clk 
+ntrace select -o on -n /displaytest/UUT/modesel 
+ntrace select -o on -n /displaytest/UUT/reset 
+ntrace select -o on -n /displaytest/UUT/regsel 
+ntrace select -o on -n /displaytest/UUT/ssdsel 
+ntrace select -o on -n /displaytest/UUT/ssddis 
+ntrace select -o on -n /displaytest/UUT/clk_ring 
+ntrace select -o on -n /displaytest/UUT/t0 
+ntrace select -o on -n /displaytest/UUT/t1 
+ntrace select -o on -n /displaytest/UUT/t2 
+ntrace select -o on -n /displaytest/UUT/t3 
+ntrace select -o on -n /displaytest/UUT/t4 
+ntrace select -o on -n /displaytest/UUT/t5 
+ntrace select -o on -n /displaytest/UUT/t6 
+ntrace select -o on -n /displaytest/UUT/t7 
+ntrace select -o on -n /displaytest/UUT/s0 
+ntrace select -o on -n /displaytest/UUT/s1 
+ntrace select -o on -n /displaytest/UUT/s2 
+ntrace select -o on -n /displaytest/UUT/s3 
+ntrace select -o on -n /displaytest/UUT/s4 
+ntrace select -o on -n /displaytest/UUT/s5 
+ntrace select -o on -n /displaytest/UUT/s6 
+ntrace select -o on -n /displaytest/UUT/s7 
+ntrace select -o on -n /displaytest/UUT/mem1 
+ntrace select -o on -n /displaytest/UUT/mem2 
+ntrace select -o on -n /displaytest/UUT/PCout 
+ntrace select -o on -n /displaytest/UUT/R0 
+ntrace select -o on -n /displaytest/UUT/R1 
+ntrace select -o on -n /displaytest/UUT/R2 
+ntrace select -o on -n /displaytest/UUT/R3 
+ntrace select -o on -n /displaytest/UUT/div/reset 
+ntrace select -o on -n /displaytest/UUT/ssdin 
+ntrace select -o on -n /displaytest/UUT/disp 
+ntrace select -o on -n /displaytest/UUT/Reg 
+ntrace select -o on -n /displaytest/UUT/div/C 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 1000 ns 
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 245.727 Meg
+
+Thu Nov 23 23:31:53 2017
+

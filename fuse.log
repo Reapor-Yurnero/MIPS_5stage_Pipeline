@@ -1,0 +1,112 @@
+Determining compilation order of HDL files
+Analyzing Verilog file signEx.v
+Analyzing Verilog file shifter26.v
+Analyzing Verilog file regFile.v
+Analyzing Verilog file PC.v
+Analyzing Verilog file MUX_4_1.v
+Analyzing Verilog file MUX_2_1.v
+Analyzing Verilog file MEM_WB_Reg.v
+Analyzing Verilog file IM.v
+Analyzing Verilog file IF_ID_Reg.v
+Analyzing Verilog file ID_EX_Reg.v
+Analyzing Verilog file IDForward.v
+Analyzing Verilog file HazardDetector.v
+Analyzing Verilog file EX_MEM_Reg.v
+Analyzing Verilog file EXForward.v
+Analyzing Verilog file DM.v
+Analyzing Verilog file Control.v
+Analyzing Verilog file ALUControl.v
+Analyzing Verilog file ALU.v
+Analyzing Verilog file SSD_Driver.v
+Analyzing Verilog file ringcounter.v
+Analyzing Verilog file main.v
+Analyzing Verilog file display.v
+Analyzing Verilog file displaytest.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.signEx into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/sign@ex.sdb
+Saving Verilog parse-tree work.shifter26 into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/shifter26.sdb
+Saving Verilog parse-tree work.regFile into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/reg@file.sdb
+Saving Verilog parse-tree work.PCReg into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@p@c@reg.sdb
+Saving Verilog parse-tree work.MUX_4_1 into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@m@u@x_4_1.sdb
+Saving Verilog parse-tree work.MUX_2_1 into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@m@u@x_2_1.sdb
+Saving Verilog parse-tree work.MEM_WB_Reg into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@m@e@m_@w@b_@reg.sdb
+Saving Verilog parse-tree work.IMEM into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@i@m@e@m.sdb
+Saving Verilog parse-tree work.IF_ID_Reg into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@i@f_@i@d_@reg.sdb
+Saving Verilog parse-tree work.ID_EX_Reg into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@i@d_@e@x_@reg.sdb
+Saving Verilog parse-tree work.IDForward into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@i@d@forward.sdb
+Saving Verilog parse-tree work.HazardDetecter into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@hazard@detecter.sdb
+Saving Verilog parse-tree work.EX_MEM_Reg into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@e@x_@m@e@m_@reg.sdb
+Saving Verilog parse-tree work.EXForward into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@e@x@forward.sdb
+Saving Verilog parse-tree work.DMEM into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@d@m@e@m.sdb
+Saving Verilog parse-tree work.Control into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@control.sdb
+Saving Verilog parse-tree work.ALUControl into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@a@l@u@control.sdb
+Saving Verilog parse-tree work.ALU into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@a@l@u.sdb
+Saving Verilog parse-tree work.SSD_Driver into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@s@s@d_@driver.sdb
+Saving Verilog parse-tree work.Ring_counter into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/@ring_counter.sdb
+Saving Verilog parse-tree work.main into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/main.sdb
+Saving Verilog parse-tree work.display into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/display.sdb
+Saving Verilog parse-tree work.div_500 into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/div_500.sdb
+Saving Verilog parse-tree work.displaytest into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/displaytest.sdb
+Saving Verilog parse-tree work.glbl into
+e:/onedrive/ji/junior/ve370/p2/mips_pipeline/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 188592 Kb
+Fuse CPU Usage: 124 ms
+Compiling module glbl
+Compiling module PCReg
+Compiling module IMEM
+Compiling module MUX_2_1(size=7)
+Compiling module IF_ID_Reg
+Compiling module shifter26
+Compiling module signEx
+Compiling module regFile
+Compiling module IDForward
+Compiling module MUX_4_1
+Compiling module Control
+Compiling module HazardDetecter
+Compiling module MUX_2_1(size=8)
+Compiling module ID_EX_Reg
+Compiling module MUX_2_1
+Compiling module MUX_4_1(size=32)
+Compiling module MUX_2_1(size=32)
+Compiling module ALU
+Compiling module ALUControl
+Compiling module EXForward
+Compiling module EX_MEM_Reg
+Compiling module DMEM
+Compiling module MEM_WB_Reg
+Compiling module main
+Compiling module div_500
+Compiling module Ring_counter
+Compiling module SSD_Driver
+Compiling module display
+Compiling module displaytest
+Compiled 29 Verilog Units
+Built simulation executable displaytest_isim_beh.exe
+Fuse Memory Usage: 212792 Kb
+Fuse CPU Usage: 187 ms

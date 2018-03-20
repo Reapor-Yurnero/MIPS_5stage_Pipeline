@@ -3,12 +3,11 @@ module IMEM(addr, data);
    parameter number = 2**addrsize;
 
    input [addrsize-1:0] addr;
-   output reg [31:0]    data;
+   output [31:0]    data;
 
    reg [31:0]           memory [29:0]; //30 instructions in total
 
    initial begin
-      data = 0;
       memory[0] = 32'b00100000000010000000000000100000; //addi $t0, $zero, 0x20 t0=0x20
       memory[1] = 32'b00100000000010010000000000110111; //addi $t1, $zero, 0x37 t1=0x37
       memory[2] = 32'b00000001000010011000000000100100; //and $s0, $t0, $t1 s0=0x20
@@ -47,8 +46,6 @@ module IMEM(addr, data);
       memory[29] =32'b00001000000000000000000000011111; //j EXIT
    end // initial begin
 
-   always @(*) begin
-      data = memory[addr[addrsize-1:2]][31:0]; // word address
-   end
+   assign data = memory[addr[addrsize-1:2]][31:0]; // word address
 
 endmodule // IM

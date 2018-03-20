@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise -intstyle ise -ifn E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.xst -ofn E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

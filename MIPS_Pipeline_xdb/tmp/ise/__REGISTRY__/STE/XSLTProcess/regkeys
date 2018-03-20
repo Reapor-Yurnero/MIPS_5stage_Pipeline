@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\XSLTProcess.exe -ise E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise display_build.xml
+s
+FormatString
+xsltprocess [--intstyle ise|xflow|silent] <xmlfile> [-a] [-w] [--libxslt <limit:-1,10>] 
+s

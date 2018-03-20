@@ -1,0 +1,5 @@
+xst -ise "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise" -intstyle ise -ifn "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.xst" -ofn "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.syr"
+xst -ise "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise" -intstyle ise -ifn "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.xst" -ofn "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/display.syr"
+ngdbuild -ise "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise" -intstyle ise -dd _ngo  -i -p xa9500xl "display.ngc" display.ngd
+cpldfit -ise "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper display.ngd
+XSLTProcess -ise "E:/OneDrive/JI/Junior/VE370/p2/MIPS_Pipeline/MIPS_Pipeline.ise" display_build.xml

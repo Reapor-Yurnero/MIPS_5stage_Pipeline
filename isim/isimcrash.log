@@ -1,0 +1,8 @@
+Exception at PC 0x7443CBB2
+Unknown signal -529697949 received
+Printing stacktrace...
+
+Exception at PC 0x0A90B149
+Signal EXCEPTION_ACCESS_VIOLATION received
+Attemped to read address 0x0273001C
+Another exception occurred while writing back trace, hence exiting
